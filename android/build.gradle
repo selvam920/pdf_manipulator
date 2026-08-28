@@ -16,9 +16,7 @@ allprojects {
 }
 
 android {
-    if (project.android.hasProperty("namespace")) {
-        namespace = 'com.deepanshuchaudhary.pdf_manipulator'
-    }
+    namespace = 'com.deepanshuchaudhary.pdf_manipulator'
 
     compileSdk = 37
 
