@@ -21,9 +21,11 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
+
 android {
     namespace = "com.deepanshuchaudhary.pdf_manipulator_example"
     compileSdk = 37
+    ndkVersion = "30.0.16248370"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_21
@@ -42,7 +44,6 @@ android {
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-build-configuration.
         minSdkVersion = 21
         targetSdkVersion = 36
-        ndkVersion = flutter.ndkVersion
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName
     }
